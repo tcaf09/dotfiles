@@ -1,0 +1,16 @@
+# Window settings
+[window]
+opacity = 1.0
+
+# Font settings
+[font]
+size = 16.0
+
+# Key bindings
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+]
+
+
