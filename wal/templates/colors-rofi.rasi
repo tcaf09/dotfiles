@@ -1,0 +1,14 @@
+/* Pywal Rofi Colors */
+* {
+    background:     {{colors.color0}};
+    foreground:     {{colors.color7}};
+    alternate-background: {{colors.color8}};
+    selected-background:  {{colors.color4}};
+    selected-foreground:  {{colors.color0}};
+    active-background:    {{colors.color5}};
+    active-foreground:    {{colors.color0}};
+    urgent-background:    {{colors.color1}};
+    urgent-foreground:    {{colors.color0}};
+    border-color:         {{colors.color2}};
+    separatorcolor:       {{colors.color3}};
+}

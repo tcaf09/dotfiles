@@ -1,0 +1,7 @@
+[colors]
+background = {color0}
+foreground = {color7}
+primary = {color4}
+secondary = {color2}
+alert = {color1}
+disabled = {color8}
