@@ -61,7 +61,7 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -180,7 +180,6 @@ mode "resize" {
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
-
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -190,10 +189,15 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Gaps
-gaps inner 10px
+gaps inner 10
+gaps top 16
 
 # Alacritty defual terminal
 set $term alacritty
 
 # Run startup script
-exec --no-startup-id ~/.config/startup.sh
+exec --no-startup-id ~/.config/scripts/startup.sh
+
+#Adjust display size
+exec --no-startup-id xrandr --output eDP-1 --scale 0.75x0.75
+
