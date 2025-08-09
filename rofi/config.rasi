@@ -6,7 +6,10 @@ configuration {
 }
 
 @theme "~/.cache/wal/colors-rofi-dark.rasi"
-
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
 element {
     padding: 20px;
 }

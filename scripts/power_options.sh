@@ -9,7 +9,7 @@ case "$choice" in
 		shutdown now
 		;;
 	"Restart")
-		reboot now
+		reboot
 		;;
 	"Log Out")
 		i3-msg exit

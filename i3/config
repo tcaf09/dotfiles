@@ -190,7 +190,7 @@ bindsym $mod+r mode "resize"
 
 # Gaps
 gaps inner 10
-gaps top 16
+gaps top 30
 
 # Alacritty defual terminal
 set $term alacritty
