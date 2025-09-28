@@ -201,3 +201,7 @@ exec --no-startup-id ~/.config/scripts/startup.sh
 #Adjust display size
 exec --no-startup-id xrandr --output eDP-1 --scale 0.75x0.75
 
+# Set Caps-lock to control
+exec --no-startup-id setxkbmap -option ctrl:nocaps
+
+
