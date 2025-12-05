@@ -1,0 +1,38 @@
+/* Remove borders/backgrounds */
+
+.modules-left, .modules-center, .modules-right {
+	background-color: #101226;
+	border-radius: 50px;
+}
+
+.modules-left, .modules-right {
+	margin: 0 25px
+}
+#workspaces button {
+    border: none;
+    background: transparent;
+    color: #c3c3c8;
+}
+
+/* Highlight active workspace */
+#workspaces button.active {
+	padding: 0 20px;
+	border-radius: 50px;
+	background-color: #B0BBE1;
+}
+
+#workspaces button.active label {
+	color: #101226;
+}
+
+#waybar {
+	border-radius: 50px;
+	background-color: transparent;
+	color: #c3c3c8;
+}
+
+widget label {
+	padding: 0px 8px;
+	margin: 5px;
+	color: #c3c3c8;
+}
