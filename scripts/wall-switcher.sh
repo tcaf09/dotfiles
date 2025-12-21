@@ -2,10 +2,18 @@
 
 WALLDIR="$HOME/pictures"
 
-chosen=$(ls "$WALLDIR" | wofi --show dmenu --prompt "Select Wallpaper:")
+CWD=$(pwd)
 
-[ -z "$chosen" ] && exit 1
+cd "$WALLDIR" || exit
 
-FILE="$WALLDIR/$chosen"
+SELECTED_WALL=$(for a in *.jpg *.png; do
+  echo -en "$a\0icon\x1f$PWD/$a\n"
+done | rofi -dmenu -show-icons -p "")
+
+[ -z "$SELECTED_WALL" ] && exit 1
+
+FILE="$WALLDIR/$SELECTED_WALL"
 
 ~/.config/scripts/wallpaper.sh "$FILE"
+
+cd "$CWD" || exit

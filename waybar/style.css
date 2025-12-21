@@ -1,7 +1,7 @@
 /* Remove borders/backgrounds */
 
 .modules-left, .modules-center, .modules-right {
-	background-color: #101226;
+	background-color: #151209;
 	border-radius: 50px;
 }
 
@@ -11,28 +11,28 @@
 #workspaces button {
     border: none;
     background: transparent;
-    color: #c3c3c8;
+    color: #c4c3c1;
 }
 
 /* Highlight active workspace */
 #workspaces button.active {
 	padding: 0 20px;
 	border-radius: 50px;
-	background-color: #B0BBE1;
+	background-color: #CE9A78;
 }
 
 #workspaces button.active label {
-	color: #101226;
+	color: #151209;
 }
 
 #waybar {
 	border-radius: 50px;
 	background-color: transparent;
-	color: #c3c3c8;
+	color: #c4c3c1;
 }
 
 widget label {
 	padding: 0px 8px;
 	margin: 5px;
-	color: #c3c3c8;
+	color: #c4c3c1;
 }

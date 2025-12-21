@@ -1,4 +1,4 @@
-chosen=$(printf "Shutdown\nReboot\nSuspend\nLogout" | wofi --show dmenu --prompt "Power Options:")
+chosen=$(printf "Shutdown\nReboot\nSuspend\nLogout" | rofi -dmenu -p "Power Options")
 
 case $chosen in
 "Shutdown")
